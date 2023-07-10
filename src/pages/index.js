@@ -71,7 +71,7 @@ export default function Home() {
                   hover:border-dark dark:border-light
                    dark:p-4
                    "
-                  href="/AltaCV___NicolasOmar_Fork.pdf"
+                  href="/Ahmed_Aziz_SEO_specislist.pdf"
                   target={'_blank'}
                   download={true}
                 >
