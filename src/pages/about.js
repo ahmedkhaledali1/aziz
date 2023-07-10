@@ -20,37 +20,19 @@ const about = () => {
       rounded-3xl border border-solid border-dark bg-light
       shadow-2xl p-12  !md:p-2 md:px-1 2xl:p-8 dark:bg-dark dark:border-light"
       >
-        <Link
-          href={'/'}
-          target="_blank"
-          className="w-1/2 md:w-full h-[25rem] md:p-0 xl:p-0 cursor-pointer overflow-hidden mt-0 rounded-lg"
-        >
+        <div className="w-1/2 md:w-full h-[25rem] md:p-0 xl:p-0 cursor-pointer overflow-hidden mt-0 rounded-lg">
           <Image src={img} alt={title} className="w-full h-auto" />
-        </Link>
+        </div>
         <div className="w-1/2 md:w-full md:pl-0 flex flex-col items-start justify-between pl-6">
-          <Link
-            className="hover:underline underline-offset-2"
-            href={'/'}
-            target="_blank"
-          >
+          <div className="hover:underline underline-offset-2">
             <h2 className="my-2 mb-3 w-full text-left text-4xl font-bold dark:text-light">
               {title}
             </h2>
-          </Link>
+          </div>
           <span className="text-gray-600 font-medium mb-4 mt-2 dark:text-primaryDark">
             {type}
           </span>
           <p className="dark:text-light font-medium">{summary}</p>
-          <div className="mt-9 flex items-center justify-center  dark:text-light">
-            <Link className="w-10  " href={'/'} target="_blank"></Link>
-            <Link
-              className="ml-4  rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold"
-              href={'/'}
-              target="_blank"
-            >
-              Visit Project
-            </Link>
-          </div>
         </div>
       </article>
     );
