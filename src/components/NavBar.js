@@ -88,90 +88,16 @@ const NavBar = () => {
 
   return (
     <header
-      className="w-full px-28 py-12 sm:!pl-6 dark:text-light 
+      className="w-full px-28 py-12 sm:!pl-6 dark:text-light xl:px-3 xl:py-6
     flex items-center justify-center relative text-2xl font-semibold
     "
     >
-      <button
-        className="flex-col justify-center items-center hidden lg:flex "
-        onClick={handleClick}
-      >
-        <span
-          className={`bg-dark dark:bg-light dark:text-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm ${
-            isOpen ? `rotate-45 translate-y-1` : `-translate-y-0.5 `
-          }`}
-        ></span>
-        <span
-          className={`bg-dark dark:bg-light dark:text-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm my-0.5 ${
-            isOpen ? 'opacity-0' : 'opacity-100'
-          }`}
-        ></span>
-        <span
-          className={`bg-dark dark:bg-light dark:text-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm ${
-            isOpen ? `-rotate-45 -translate-y-1` : `translate-y-0.5 `
-          }`}
-        ></span>
-      </button>
-      <div className="w-full flex justify-center items-center lg:hidden">
+      <div className="w-full flex justify-center items-center ">
         <nav>
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
           <CustomLink href="/projects" title="Projects" className="mx-4" />
         </nav>
-        {/* <nav className="flex flex-row gap-10 justify-center items-center">
-          <motion.a
-            href="https://github.com/ahmedkhaledali1"
-            target={'_blank'}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <GithubIcon />
-          </motion.a>
-          <motion.a
-            href="https://ahmed.khaled01233@gmail.com"
-            target={'_blank'}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <SiGmail size={35} className="bg-white text-red-800 rounded-2xl" />
-          </motion.a>
-          <motion.a
-            whileTap={{ scale: 0.9 }}
-            whileHover={{ y: -2 }}
-            href="https://wwww.facebook.com"
-            target={'_blank'}
-          >
-            <BsFacebook
-              className="text-blue-800 bg-white rounded-full"
-              size={35}
-            />
-          </motion.a>
-          <motion.a
-            className="mr-14"
-            whileTap={{ scale: 0.9 }}
-            whileHover={{ y: -2 }}
-            href="https://www.linkedin.com/in/ahmed-khaled-8b0a52251/"
-            target={'_blank'}
-          >
-            <LinkedInIcon />
-          </motion.a>
-          <button
-            onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-            className={`ml-3 flex items-center justify-center rounded-full p-1
-          ${
-            mode === 'light'
-              ? 'dark:bg-dark dark:text-light'
-              : 'dark:text-dark dark:bg-light'
-          }
-          `}
-          >
-            {mode === 'dark' ? (
-              <SunIcon className={'fill-dark'} />
-            ) : (
-              <MoonIcon className={'fill-dark'} />
-            )}
-          </button>
-        </nav> */}
       </div>
 
       {isOpen ? (

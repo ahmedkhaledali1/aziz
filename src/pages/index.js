@@ -17,7 +17,7 @@ export default function Home() {
       <main className="flex items-center text-dark w-full h-min dark:bg-dark dark:text-light pt-0">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
           <div className="  w-full flex items-center justify-center text-center flex-col">
-            <div className="md:w-full flex justify-start  items-center rounded-full ">
+            <div className="md:w-full xl:px-24 flex justify-start  items-center rounded-full ">
               <Image
                 src={profilePic}
                 alt="Ahmed"
@@ -53,7 +53,7 @@ export default function Home() {
                   am constantly seeking new ways to improve my skills and
                   deliver results for my clients.
                 </p>
-                <div className="w-20 h-20">
+                <div className="w-20 h-20 xl:hidden">
                   <Image
                     src={lightBuld}
                     alt=" Ahmed Khaled"
@@ -62,7 +62,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex items-center mt-5 self-center lg:gap-6">
+              <div className="flex items-center mt-5 xl:mb-4 self-center lg:gap-6">
                 <Link
                   className=" mt-2 bg-dark text-light px-4 py-3
                   rounded-lg text-lg font-semibold hover:bg-light

@@ -10,7 +10,6 @@ import fwd from '../../public/images/projects/FWD.jpg';
 import edrak1 from '../../public/images/projects/edrak11.jpg';
 import edrak2 from '../../public/images/projects/edrak2.jpg';
 import edrak3 from '../../public/images/projects/edrak3.jpg';
-import Link from 'next/link';
 
 const about = () => {
   const FeaturedProject = ({ type, title, summary, img, link, github }) => {
@@ -18,14 +17,14 @@ const about = () => {
       <article
         className="w-full md:flex-col  flex items-center justify-between mt-12
       rounded-3xl border border-solid border-dark bg-light
-      shadow-2xl p-12  !md:p-2 md:px-1 2xl:p-8 dark:bg-dark dark:border-light"
+      shadow-2xl p-12 xl:p-6 dark:bg-dark dark:border-light"
       >
-        <div className="w-1/2 md:w-full h-[25rem] md:p-0 xl:p-0 cursor-pointer overflow-hidden mt-0 rounded-lg">
+        <div className="w-1/2 md:w-full h-[25rem] xl:h-[10rem] md:p-0 xl:p-0 cursor-pointer overflow-hidden mt-0 rounded-lg">
           <Image src={img} alt={title} className="w-full h-auto" />
         </div>
         <div className="w-1/2 md:w-full md:pl-0 flex flex-col items-start justify-between pl-6">
           <div className="hover:underline underline-offset-2">
-            <h2 className="my-2 mb-3 w-full text-left text-4xl font-bold dark:text-light">
+            <h2 className="my-2 mb-3 xl:text-xl w-full text-left text-4xl font-bold dark:text-light">
               {title}
             </h2>
           </div>
@@ -47,13 +46,11 @@ const about = () => {
         <Layout className="!pt-28 sm:!p-10">
           <AnimatedText
             text="Passion Fuels Purpose!"
-            className="!text-center !text-6xl lg:text-7xl sm:mb-6 mt-0 pt-0 mb-16"
+            className="!text-center text-6xl xl:text-4xl sm:mb-6 mt-0 pt-0 mb-16"
           />
           <div className="grid w-full xl:grid-cols-9 md:grid-cols-9 grid-cols-9 gap-16 sm:gap-8 !text-6xl">
-            <div className="col-span-3 md:col-span-3 md:order-2 flex flex-col  items-start  justify-start ">
-              <h2 className="mb-4 text-lg font-bold uppercase text-light/75">
-                Biography
-              </h2>
+            <div className="col-span-3 xl:col-span-9 md:col-span-3 md:order-2 flex flex-col  items-start  justify-start ">
+              <h2 className="mb-4 text-lg font-bold uppercase">Biography</h2>
               <p className=" text-xl w-full">
                 As an experienced SEO specialist and content creator, I have a
                 deep understanding of the ever-changing digital landscape and
@@ -112,7 +109,7 @@ const about = () => {
           <div className="mx-auto">
             <Skills />
           </div>
-          <div className="mt-44 mb-20 md:mt-32 sm:!mt-24"></div>
+          <h2 className="text-center font-bold text-5xl  my-5">Certificates</h2>
           <div>
             <FeaturedProject
               img={google}

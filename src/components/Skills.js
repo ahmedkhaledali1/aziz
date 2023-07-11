@@ -17,10 +17,10 @@ const Skill = ({ name, x, y }) => {
 const Skills = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center">
-      <h2 className="font-bold  text-8xl  mt-56 sm:hidden md:mt-32 mb-6 w-full text-center">
+      <h2 className="font-bold  text-8xl  mt-56 md:mt-32 mb-6 w-full text-center">
         Skills
       </h2>
-      <div className="w-full flex justify-center">
+      <div className="w-full xl:flex-col flex justify-center">
         <div>
           <Skill name="Microsoeft Office" />
           <Skill name="Keyword Researcher" />
